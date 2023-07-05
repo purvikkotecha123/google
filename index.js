@@ -14,7 +14,6 @@ app.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
 app.use(express.urlencoded({
   extended: true
 }));
-app.use(cors(corsOptions));
 
 let sess;
 app.get('/', (req, res) => {
